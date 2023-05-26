@@ -1,0 +1,237 @@
+* {
+    margin:0;
+    padding:0px;
+    box-sizing:border-box ;
+    font-family:'Popins' , sans-serif;
+}
+
+
+body {
+    min-height: 200vh;
+    max-width: auto;
+    background:linear-gradient( #efba48ec, #ca8cfa);
+    margin: 0 auto;
+    position: relative;
+}
+section{
+    position:relative ;
+    width:100%;
+    height: 100vh;
+    overflow:hidden ;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+section h2{
+    color:#fff;
+    font-size:2em;
+    text-transform:uppercase ;
+    text-shadow:0 1px 4px red;
+    z-index: 2;
+}
+section .set{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+section .set div{
+    position:absolute ;
+    display:block ;
+}
+section .set div:nth-child(1){
+    left:20%;
+    animation:animate 15s linear infinite ;
+    animation-delay:-7s;
+}
+section .set div:nth-child(2){
+    left:50%;
+    animation:animate 20s linear infinite ;
+    animation-delay:-5s;
+}
+section .set div:nth-child(3){
+    left:70%;
+    animation:animate 20s linear infinite ;
+    animation-delay:0s;
+}
+section .set div:nth-child(4){
+    left:0%;
+    animation:animate 15s linear infinite ;
+    animation-delay:-5s;
+}
+section .set div:nth-child(5){
+    left:85%;
+    animation:animate 18s linear infinite ;
+    animation-delay:-10s;
+}
+section .set div:nth-child(6){
+    left:20%;
+    animation:animate 15s linear infinite ;
+    animation-delay:-7s;
+}
+section .set div:nth-child(7){
+    left:0%;
+    animation:animate 12s linear infinite ;
+    
+}
+section .set div:nth-child(8){
+    left:60%;
+    animation:animate 15s linear infinite ;
+}
+@keyframes animate{
+    0%{
+        opacity:0;
+        top: -10%;
+        transform:translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity:1;
+    }
+    20%{
+        transform:translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform:translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform:translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform:translateX(-20px) rotate(180deg);
+    }
+    100%{
+        top: 110%;
+        transform:translateX(-20px) rotate(225deg);
+    }
+    
+}
+
+.guy {
+    width: 400px;
+    height: 700px;
+    object-fit: fill;
+    border: 10px solid #f1dbcd
+}
+
+.guyguys {
+    width: 400px;
+    height: 700px;
+    object-fit: fill;
+    border: 10px solid #ecd5ee
+}
+
+.set2{
+    transform:scale(2) rotateY(180deg);
+    filter:blur(2px);
+    z-index: 1;
+}
+
+.set3{
+    transform:scale(0.8) rotateX(180deg);
+    filter:blur(4px);
+    z-index: 1;
+}
+
+.subtitle {
+    font-size: 96px;
+    padding-left: 1%;
+    padding-right: 15%;
+    padding-bottom: 4%;
+    text-transform: lowercase;
+}
+
+.sizing {
+    font-size: px;
+    padding-left: 1%;
+    padding-right: 15%;
+    padding-bottom: 4%;
+    text-transform: lowercase;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.offset {
+    padding-bottom: 21%;
+    padding-right: 37%;
+    display: inline;
+}
+
+
+
+.aboutguy {
+    display: inline;
+    font-size: 100px;
+    padding-bottom: 10%;
+    padding-right: 80%;
+    text-transform: lowercase;
+}
+
+.aboutguyinside {
+    padding-left: 20%;
+    display: inline;
+    text-transform: lowercase;
+}
+
+
+.likeguy {
+    display: inline;
+    font-size: 60px;
+    padding-bottom: 0%;
+    padding-right: 80%;
+    text-transform: lowercase;
+}
+
+.likeguyinside{
+    padding-left: 20%;
+    display: inline;
+    text-transform: lowercase;
+}
+
+.likeguyinsidesmall{
+    font-size: 8px;
+    padding-left: 20%;
+    display: inline;
+    text-transform: lowercase;
+}
+
+.offsetotherguy {
+    padding-bottom: 40%;
+    padding-right: 40%;
+    display: inline;
+}
+
+.moveguy {
+    padding-right: 40%;
+    font-size: 12px;
+    padding-left: 20%;
+    display: inline;
+    text-transform: lowercase;
+}
+
+.guyguy {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+}
+
+.image {
+    object-fit: fill;
+    border: 5px solid #ecd5ee;
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    object-position: center;
+
+}
