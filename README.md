@@ -1,6 +1,6 @@
 # pwebsite
 
 
-- make text boxes for stuffz
-- add cool css, falling leaves or smthing
-- research
+- clone repo
+- open index.html however (chrome.exe, open)
+- cringe
